@@ -67,6 +67,28 @@ class SingleLinkedList {
       temp.next = node;
     }
   }
+  //删除节点
+  //找到待删除节点的前一个节点
+  public void del(int no){
+    Node temp = head;
+    boolean flag = false;//标志是否找到该删除节点
+    while (true){
+      if (temp.next == null){
+        break;
+      }if (temp.next.no == no){
+        //找到待删除节点的前一个节点
+        flag = true;
+        break;
+      }temp = temp.next;
+
+    }
+    if (flag){//找到
+      temp.next = temp.next.next;
+    }else {
+      System.out.printf("删除的节点%d不存在",no);
+    }
+  }
+
 
   //修改节点信息，根据no号修改，即no编号不能改
   public void update(Node newNode){
