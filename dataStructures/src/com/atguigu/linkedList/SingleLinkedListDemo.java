@@ -23,6 +23,10 @@ public class SingleLinkedListDemo {
 //定义SingleLinkedList
 class SingleLinkedList {
 
+  public Node getHead() {
+    return head;
+  }
+
   //初始化一个头节点，头节点不要动
   private Node head = new Node(0, "", "");
 
@@ -137,6 +141,54 @@ class SingleLinkedList {
       System.out.println(temp);
       temp = temp.next;
     }
+  }
+  //将单链表反转
+  public static void reversetList(Node head){
+    //如果当前链表为空，或者只有一个节点，无需反转，直接返回
+    if (head.next==null||head.next.next==null){
+      return;
+    }
+    //定义一个辅助的指针(变量)，帮助我们遍历原来的链表
+    Node cur = head.next;
+    Node next = null;//指向当前节点下一个节点
+    Node reverseHeaad = new Node(0,"","");
+    //遍历原来的链表，
+    //每遍历一个节点，就将其取出，并放在新的链表reverseHead的最前端
+    while (cur!=null){
+      next = cur.next;//先暂时保存当前节点的下一个节点，因为后面使用
+      cur.next = reverseHeaad.next;//将上次反转节点的临近节点位置给当前节点下一个位置，因为反转节点的下一个节点是最新遍历的节点，要把原先第一个节点的位置给当前节点的next
+      reverseHeaad.next = cur;//将cur连接到反转节点的下一个位置
+      cur = next;//让cur后移
+    }//将head.next 指向reverseHead.next,实现单链表的反转
+    head.next = reverseHeaad.next;
+  }
+  //查找单练表中的倒数的第k个节点
+  public static Node findLastIndexNode(Node head,int index){
+    if (head.next == null){
+      return null;
+    }
+    int size = getLength(head);
+    if (index<=0||index>size){
+      return null;
+    }
+    Node currentNode = head;
+    for (int i = 0; i <size - index ; i++) {
+      currentNode = currentNode.next;
+    }
+    return currentNode;
+  }
+  //获取单链表的节点的个数(不包括头节点)
+  public static int getLength(Node head){
+    if (head.next ==null){
+      return 0;
+    }
+    int length = 0;
+    Node currentNode = head.next;
+    while (currentNode!=null){
+      length++;
+      currentNode = currentNode.next;
+    }
+    return length;
   }
 }
 
