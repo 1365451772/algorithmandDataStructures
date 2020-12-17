@@ -166,6 +166,9 @@ public class PolandNotation {
         } else if (item.equals("*")) {
           res = num1 * num2;
         } else if (item.equals("/")) {
+          if (num2==0){
+            throw new ArithmeticException("除数不能为0");
+          }
           res = num1 / num2;
         } else {
           throw new RuntimeException("运算符有误");
