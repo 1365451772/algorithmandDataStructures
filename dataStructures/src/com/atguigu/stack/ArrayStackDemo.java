@@ -3,9 +3,9 @@ package com.atguigu.stack;
 import java.util.Scanner;
 
 /**
- * @Author sp
+ * @Author
  * @Description
- * @create 2020-12-17 14:00
+ * @create 2020-12-17
  * @Modified By:
  */
 public class ArrayStackDemo {
