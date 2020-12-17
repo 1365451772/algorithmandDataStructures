@@ -190,4 +190,5 @@ class HeroNode2 {
     return "HeroNode [no=" + no + ", name=" + name + ", nickname=" + nickname + "]";
   }
 
+
 }
