@@ -47,7 +47,8 @@ public class Calculator {
           // 就直接入符号栈.
           operStack.push(ch);// 1 + 3
         }
-      } else {//如果是数，则直接入数栈
+      } else {
+        //如果是数，则直接入数栈
         //numStack.push(ch - 48); //? "1+3" '1' => 1
         //分析思路
         //1. 当处理多位数时，不能发现是一个数就立即入栈，因为他可能是多位数
