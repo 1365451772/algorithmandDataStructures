@@ -23,7 +23,7 @@ public class Queue8 {
   //编写一个方法，放置第n个皇后
   //特别注意： check 是 每一次递归时，进入到check中都有  for(int i = 0; i < max; i++)，因此会有
   private void check(int n){
-    if (n == max){//n=8 [0-7],8个皇后依然放好
+    if (n == max){//n=8 [0-7],8个皇后已经放好
       print();
       return;
     }
@@ -32,7 +32,7 @@ public class Queue8 {
     for (int i = 0;i<max;i++){
       //先把当前皇后n,放到该行的第一列
        array[n] = i;
-       //判断当前这个皇后到i时，是否冲突
+       //判断当前这个皇后到i列时，是否冲突
       if (judge(n)){//不冲突
         //接着放n+1个皇后，即开始递归
         check(n+1);
