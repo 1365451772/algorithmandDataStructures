@@ -87,7 +87,7 @@ public class QuickSort {
 
   void quick_sort(int s[], int l, int r) {
     if (l < r) {
-      //Swap(s[l], s[(l + r) / 2]); //将中间的这个数和第一个数交换 参见注1
+      //Swap(s[l], s[(l + r) / 2]); //将中间的这个数和第一个数交换
       int i = l, j = r, x = s[l];
       while (i < j) {
         while (i < j && s[j] >= x) // 从右向左找第一个小于x的数
