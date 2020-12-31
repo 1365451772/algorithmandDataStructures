@@ -1,4 +1,4 @@
-package com.atguigu.linkedList;
+package com.peng.linkedList;
 
 import java.util.Stack;
 

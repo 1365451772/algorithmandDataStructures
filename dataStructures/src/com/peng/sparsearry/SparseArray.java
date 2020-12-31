@@ -1,4 +1,4 @@
-package com.atguigu.sparsearry;
+package com.peng.sparsearry;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

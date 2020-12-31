@@ -1,4 +1,4 @@
-package com.atguigu.stack;
+package com.peng.stack;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.atguigu.queue;
+package com.peng.queue;
 
 import java.util.Scanner;
 
