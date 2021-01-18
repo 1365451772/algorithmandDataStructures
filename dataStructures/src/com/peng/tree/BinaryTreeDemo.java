@@ -1,7 +1,7 @@
 package com.peng.tree;
 
-public class BinaryTreeDemo {
 
+public class BinaryTreeDemo {
   public static void main(String[] args) {
     //先需要创建一颗二叉树
     BinaryTree binaryTree = new BinaryTree();
@@ -339,7 +339,3 @@ class HeroNode {
   }
 
 }
-
-//
-
-
