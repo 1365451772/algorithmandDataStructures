@@ -457,6 +457,7 @@ class Node implements Comparable<Node>  {
     return this.weight - o.weight;
   }
 
+  @Override
   public String toString() {
     return "Node [data = " + data + " weight=" + weight + "]";
   }
