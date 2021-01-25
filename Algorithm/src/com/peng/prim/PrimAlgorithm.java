@@ -1,17 +1,6 @@
-package com.peng.prim;
-
-/**
- * @Author sp
- * @Description
- * @create 2021-01-25 15:59
- * @Modified By:
- */
-public class PrimAlgorithm {
-
-}
 package com.atguigu.prim;
 
-    import java.util.Arrays;
+import java.util.Arrays;
 
 public class PrimAlgorithm {
 
