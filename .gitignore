@@ -10,7 +10,7 @@
 
 # Compiled class file
 *.class
-
+/Algorithm/*.iml
 # Log file
 *.log
 
